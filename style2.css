@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color:#f1eff5;
+}
+h5{
+    font-size: 1rem;
+    color:red;
+    
+}
+
+
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px;
+}
+ ul{
+    position:absolute;
+    top:0;
+    list-style:none;
+    padding-left: 230px;
+
+
+ 
+}
+
+ul > li{
+     display: inline-block;
+}
+.home{
+    
+    position: absolute;
+    top:0;
+    left: 8rem;
+    cursor: pointer;
+
+}
+
+
+
+.cart ion-icon {
+   vertical-align: bottom;
+   font-size: 20px;
+   padding-right: 15px;
+}
+
+.cart a {
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.main-menu{
+
+    margin-top: 2rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.menu-item{
+    
+    text-align: center;
+}
+
+
+img{
+    width: 200px;
+    padding:20px;
+ 
+
+}
+button{
+    background-color: red;
+    padding:3px;
+}
+button:hover {
+    background-color: #ffff;
+}
+.header-take{
+    color: red;
+    text-decoration: underline;
+    padding-top: 1em;
+}
+
+.container,
+.container-products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-bottom: 60px;
+}
+.footer-hero{
+    background-color: #bfbfbf;
+    min-height:;
+    width:100%;
+    min-height: 3em;
+    position: relative;
+    bottom:-7rem;
+
+
+
+
+}
+.social-hero{
+    display:inline-flex;
+    padding:2em;
+    font-size: 10px;
+}
+
+.social-icons{
+    text-align: center;
+    margin-left: 25px;
+    
+
+}
+.social-icons h2{
+    font-size: 1.2em;
+}
+.social-icons i {
+    font-size: 2em;
+    margin-top: 10px;
+    padding: 5px
+}
+.trip-container{
+    text-align: center;
+    margin-left: 3.2em;
+}
+.trip-container i {
+    font-size: 3em;
+    color: green;
+}
+
+.footer-end{
+    background-color: black;
+    width: 100vw;
+    max-height: 3em;
+    position: relative;
+    bottom:-7rem;
+}
+.footer-end > p{
+    color:white;
+    text-align: center;
+}
+.yellow{
+    background-color: #d9ffb3;
+}
+
+
+
+
+
+/* ----------------- CART PAGE --------------- */
+
+.container-products {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+
+.container-products ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+   /* border-bottom: 4px solid lightgray;*/
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 5px;
+}
+
+.quantity {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  
+}
+
+.product ion-icon {
+    cursor: pointer;
+    
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+@media(min-width: 414px)
+and (max-width: 500px)
+{
+    .cart{
+        padding-left: 2.5rem;
+    }
+    .home{
+        padding-left: 1.2rem;
+    }
+}
+@media(max-width: 500px) {
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;;
+    }
+
+    .sm-hide {
+        display: none;;
+    }
+
+    .products,
+    .product-header {
+        justify-content: center;
+    }
+
+    .basketTotalContainer {
+        padding-right: 8%;
+    }
+}
+@media(min-width: 768px) and (max-width: 1200px)
+
+{   h5{
+      font-size: 1.5rem;
+      padding-left: 1em;
+    }
+
+      .container, .menu-item-wrapper{
+        display: inline-flex;
+        flex-wrap: nowrap;
+        margin-left: 5vw;
+    }
+    .cart{
+        padding-left: 24rem;
+    }
+    .home{
+     padding-left: 12rem;
+    }
+    .social-icons{
+        padding-left:12rem;
+    }
+    .trip-container{
+        padding-left:8rem;
+    }
+
+
+    
+}
+@media(min-width: 1200px)
+{  
+    #header-five{
+        font-size:2rem;
+        font-style: italic;
+    }
+
+    .header-checkout{
+        font-size:30px !important;
+    }
+
+    h5{
+        font-size:1.2rem;
+        padding-left:50px;
+    }
+    .container-products{
+        position: relative;
+        top:100px;
+    }
+    .product-header{
+        position:relative;
+        right:50px;
+        text-decoration: underline;
+        text-decoration-color: silver;
+    }
+
+
+        .container, .menu-item-wrapper{
+        display: inline-flex;
+        flex-wrap: nowrap;
+        margin-left: 5%;
+        
+    }
+    .cart ion-icon{
+        position:relative;
+        bottom:5px;
+    }
+      .cart{
+        padding-left: 65rem;
+        font-size:1.5em;
+        
+    }
+    .main-menu{
+        font-size: 1.5em;;
+    }
+    .home{
+       padding-left: 36rem;
+       font-size: 2rem;
+
+    }
+    .social-icons{
+        font-size: 1rem;
+        padding-left:32rem;
+    }
+    #footer-address{
+        color:white;
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+    .trip-container{
+        padding-left:25rem;
+        font-size: 1rem;
+    }
+    .cart ion-icon {
+   
+   font-size: 30px;
+   padding-right: 5px;
+   vertical-align: bottom;
+}
+
+.cart a {
+    background-color: royalblue;
+    color: #fff;
+    min-height: 3em;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+}
+

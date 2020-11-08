@@ -1,0 +1,544 @@
+*{
+
+	box-sizing: border-box;
+	font-size: calc(0.5em + 1vw);
+	margin:0;
+	padding:0;
+}
+*,
+::before
+::after{
+	box-sizing: inherit;
+}
+html,
+body{
+	background-color:#f1eff5;
+	min-height: 100%;
+
+}
+
+
+
+.nav-container {
+	position: relative;
+	width:100%;
+	overflow: visible;
+	height: auto;
+	font-family: 'Roboto', sans-serif;
+}
+
+.nav-container_inner {
+	display:flex;
+	justify-content: space-between;
+	max-width:100%;
+    position:relative;
+
+	
+	
+}
+.home-link {
+	
+	padding:5px;
+	color:red;
+    opacity: 1;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 1.2em;
+	margin-top:0px;
+	font-style: italic;
+
+}
+.top-nav {
+	
+	position:relative;
+	display: flex;
+	list-style-type: none;
+	z-index: 2;
+	top: 2.5px;
+
+	
+	
+}
+.top-nav a {
+	display:block;
+	padding:0.3em 3em;
+    text-decoration: none;
+	color:#ffff;
+	border:1px solid black;
+	background-color: grey;
+	opacity: 0.75;
+    border-radius: 3px;
+    box-shadow: 1px 1px;
+}
+.top-nav a:hover{
+	background-color: yellow;
+	color:black;
+}
+.carousel-section{
+	margin-top: -5px;
+}
+.carousel{
+	overflow:hidden;
+	position:relative;
+	width: 100%;
+	max-height: auto;
+}
+.carousel img{
+	width: 100%;
+	max-height: 100px;
+}
+.carousel .carousel-item,
+.carousel .carousel-item--hidden{
+	display:none;
+}
+.carousel .carousel-item-visible {
+	display:block;
+}
+.carousel .carousel_actions
+{
+	display:flex;
+	justify-content: space-between;
+	position:absolute;
+	width: 100%;
+	top:50%;
+	transform: translateY(-50%);
+}
+.carousel button{
+	border-radius:50px;
+	border: 0;
+	font-weight: bold;
+	cursor: pointer;
+	width:20px;
+	height: 20px;
+	font-size: 1em;
+
+
+}
+.carousel button{
+	margin: 0 5px;
+}
+.grid-container{
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1;
+    grid-gap: 1.5em;
+    max-width: 1080px;
+    margin:0 auto;
+    text-align: center;
+	font-family: 'Dancing Script', cursive;
+}
+
+
+
+.card-one{
+	width:250px;
+	margin-top: 3em;
+	border: 1px solid black;
+	margin-left: 5.5em;
+	background-color: #ffffe6;
+	padding:20px;
+	overflow: hidden;
+	line-height: 1.6;
+	transition: ease-out 0.3s;
+	animation: zoomout 0.5s;
+	animation-delay: 3s;
+	animation-timing-function: ease-in;
+
+
+}
+.card-one:hover,
+.card-two:hover,
+.card-three:hover{
+	transform: scaleY(1.1);
+
+}
+@keyframes zoomout{
+	0%{
+		transform: scaleX(1.2);
+	}
+	
+}
+
+
+
+.card-one > header{
+	margin-bottom: 15px;
+	margin-top: 0px;
+}
+ header > h2{
+	font-size: 3em;
+	margin-top: -15px;
+}
+.grid-container p{
+	font-size:2em;
+}
+.grid-container img{
+	width: 100px;
+}
+.card-two > header > h2 {
+	font-size: 3em;
+	margin-bottom: 15px;
+}
+.card-three > header > h2{
+	font-size: 3em;
+	margin-bottom: 15px;
+}
+.btn-card-one{
+	margin-top: 10px;
+	background-color: black;
+	color: white;
+	border-radius: 50px;
+	width: 100px;
+	padding:2px;
+	box-shadow: 2px 2px;
+}
+
+
+
+.card-two{
+	width:250px;
+	margin-top: 3em;
+	border: 1px solid black;
+	margin-left: 5.5em;
+	background-color: #ffffe6;
+	padding:20px;
+	overflow: hidden;
+	line-height: 1.6;
+	transition: ease-out 0.3s;
+	animation: zoomout 2s;
+	animation-delay: 5s;
+	animation-timing-function: ease-in;
+
+}
+.heading-alc-menu{
+	text-align: center;
+	font-size: 4em;
+	text-transform: uppercase;
+	margin-top: 10px;
+	color:red;
+	text-decoration: underline;
+}
+.card-three{
+	width:250px;
+	margin-top: 3em;
+	border: 1px solid black;
+	margin-left: 5.5em;
+	background-color: #ffffe6;
+	padding:20px;
+	overflow: hidden;
+	line-height: 1.6;
+	transition: ease-out 0.3s;
+	animation: zoomout 2s;
+	animation-delay: 8s;
+	animation-timing-function: ease-in;
+}
+.modal-body{
+	position:fixed;
+	transform: translateZ(0);-webkit-transform: translateZ(0);
+	background-color:red;
+	top:30em;
+	right:10%;
+	min-height: 300px;
+	z-index: 1;
+	width:80%;
+	overflow: scroll;
+	padding:8em 6em;
+	line-height: 1.8;
+}
+.exit-button{
+	position: absolute;
+	top:3%;
+	left:5%;
+}
+.exit-button > button{
+	background-color: white;
+	color:black;
+	font-weight: 900;
+	width:50px;
+}
+.food-menu > h1{
+	font-size: 2em;
+	position:absolute;
+	top:10%;
+}
+
+.btn-booking{
+	background-color: yellow;
+	margin-top: 4em;
+	border-radius: 20px;
+	width:100px;
+}
+.modal-menu{
+	display:none;
+}
+
+.modal-menu-one{
+	display:block;
+}
+.footer-hero{
+	margin-top: 10px;
+	background-color: #bfbfbf;
+	min-height: 3em;
+
+}
+.social-hero{
+	display:inline-flex;
+	padding:2em;
+}
+
+.social-icons{
+	text-align: center;
+    margin-right: 20px;
+    margin-left: 6em;
+    margin-top: 10px;
+
+}
+.social-icons h2{
+	font-size: 1.2em;
+}
+.social-icons i {
+	font-size: 2em;
+	margin-top: 10px;
+	padding: 5px
+}
+.trip-container{
+	text-align: center;
+	margin-left: 3.2em;
+}
+.trip-container i {
+	font-size: 3em;
+	color: green;
+}
+
+.footer-end{
+	background-color: black;
+	width:100%;
+	min-height: 1em;
+}
+.footer-end > p{
+	color:white;
+	text-align: center;
+}
+.yellow{
+	background-color: #d9ffb3;
+}
+
+@media only screen
+and (min-width: 320px)
+and (orientation:landscape)
+{
+	.carousel-section{
+		margin-top: 0px;
+	}
+	.grid-container{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 0;
+		grid-template-rows: 1fr;
+		margin-left: -4em;
+
+		
+	}
+	.card-one ,.card-two, .card-three {
+		width:130px;
+		height: 95%;
+	}
+	.card-one input{
+		position: relative;
+		top:7%;
+	}
+	.card-two input{
+		position: relative;
+		top:3%;
+	}
+	.footer-hero{
+		margin-top:2em;
+	}
+	
+	.social-icons{
+	 position:relative;
+	 left:30px;
+	 top:10px;
+	}
+	.trip-container{
+	   position: relative;
+	   top:5px;
+	   left: 4em;
+	}
+	.modal-body{
+		position:fixed;
+		top: 3em;
+		max-height:250px;
+	}
+	.booking > input{
+		position: absolute;
+		color:green;
+		top:70%;
+
+	}
+}
+
+@media only screen
+and (orientation: portrait)
+and (min-width: 375px)
+and (min-height: 812px)
+{
+	.grid-container{
+		margin-left:3em;
+	}
+	
+}
+@media only screen
+and (orientation: landscape)
+and (min-width: 414px)
+and (max-height: 736px)
+	{
+		.offering{
+			margin-left:-20%;
+		}
+		.offering h1{
+			margin-left: 4em;
+		}
+		.card-one ,.card-two, .card-three {
+		width:175px;
+		min-height:450px;
+		margin-left: 5%;
+		font-size:10px;
+	
+	} 
+	}
+@media only screen
+and (orientation: landscape)
+and (min-width: 768px)
+and (max-height: 1024px)
+{
+	.card-one ,.card-two, .card-three {
+		width:175px;
+		min-height:450px;
+		margin-left: 5%;
+		font-size:10px;
+	
+	} 
+	.carousel-section{
+		margin-top:0px;
+	  }
+	.carousel img{
+		max-height: 150px;
+	}
+	.grid-container{
+		margin-top:4em ;
+		grid-template-columns:1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-gap:0;
+	}
+	.footer-hero{
+		max-height: 350px;
+		position: relative;
+		top:185px;
+		margin-top:-4em;
+	}
+	.footer-end{
+		position:relative;
+		top:180px;
+		
+	}
+	
+	.offering{
+		margin-top:3em;
+	}
+}
+@media only screen 
+and (min-width: 1280px)
+{
+	.heading-alc-menu{
+		transform: translateY(-45%);
+	}
+	.home-link{
+		padding-left: 65px;
+	}
+    .carousel-section{
+		padding-top: 3px;
+	}
+	.carousel img{
+		min-height:300px;
+	}
+	.carousel button{
+		border-radius:50px;
+		border: 0;
+		font-weight: bold;
+		cursor: pointer;
+		width:40px;
+		height: 40px;
+		font-size: 1.2em;
+	
+	
+	}
+	.carousel button{
+		margin: 0 5px;
+	}
+	.carousel_actions{
+		padding-bottom: 50px;
+	
+	}
+
+	body{
+		background-color:#f1eff5;
+	}
+
+	.grid-container{
+		position: relative;
+		top:-4rem;
+		display: flex;
+        width: 100%;
+	}
+	.card-one{
+		min-width: 350px;
+		font-size: 3em;
+	}
+	.card-one > img{
+		width:170px;
+	}
+	.card-two,
+	.card-three{
+		min-width: 350px;
+		max-height: 400px;
+	}
+	.card-two > img , .card-three > img{
+		width: 150px;
+
+	}
+	.card-two > p, .card-one > p, .card-three > p{
+		margin-top: 40px;
+		font-size: 2.2em !important;
+
+	}
+	.btn-card-one{
+		margin:30px 0px;
+		width:150px;
+	}
+	.btn-card-one:hover{
+		background-color:red;
+	}
+	.modal-body{
+		font-size:0.8em;
+	}
+    .food-menu > h1{
+		font-size: 1em;
+		padding-top: 60px;
+	    text-decoration: underline;
+	
+		
+	}
+	.exit-button > button{
+		width:150px;
+		border-radius:10px;
+	}
+	.btn-booking{
+		width:300px;
+	}
+	.social-icons{
+		padding-left: 115px;
+	}
+	
+	
+}
+	

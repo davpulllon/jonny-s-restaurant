@@ -1,0 +1,99 @@
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+   {
+   	*{
+
+	  box-sizing: border-box;
+	  font-size: calc(0.5em + 1vw);
+    }
+    *,
+     ::before
+     ::after{
+	  box-sizing: inherit;
+     }
+
+  	 body{
+	  	margin:0;
+	  	padding: 0;
+	  	height:100vh;
+	  	background-size: cover;
+	  }
+	  #logo{
+	  	font-size: 1.8em;
+	  	position:relative;
+	  	left:20px;
+	  	bottom:30px;
+	  	color:red;
+	  	font-weight: bolder;
+
+	  }
+	  .nav-container_inner{
+	  	position: absolute;
+	  	
+	  	
+	  	padding:1em;
+	  }
+	  .section-text{
+	  	
+	  	margin-left: 5.2em;
+	  	padding: 2em;
+
+      }
+      .welcome{
+      	margin-top: 8.5em;
+      	font-size: 2.5em;
+      	line-height: 2em;
+      	padding-bottom: 2em;
+      }
+      p{
+      	font-size:1.8em; 
+      	margin: 
+      	line-height:1.8;
+      	margin: 60px;
+      	padding-bottom: 1em;
+      }
+      .btn-1{
+       margin-left: 10em;
+       margin-top: 2em;      	
+      }
+      .top-nav {
+       /*position:relative;*/
+       right: -5px;
+      }
+	  .top-nav a {
+	  	font-size: 1em;
+	  }
+	
+	}
+@media only screen 
+  and (min-device-width: 765px) 
+  and (max-device-width: 1080px)
+  {
+  	body{
+  		font-size: 1.4em;
+  		line-height: 
+  	}
+  	#logo{
+  		margin-left: 1em;
+  		position: relative;
+  		bottom:1em;
+
+  	}
+  	.nav-container_inner{
+  		padding:1em;
+  		
+  	}
+  
+  	.welcome{
+  		margin-top: 30%;
+  	}
+  	p{
+  		margin-top: 10%;
+  	}
+  	.btn-1{
+  		margin-top: 10%;
+  	}
+
+
+  }
